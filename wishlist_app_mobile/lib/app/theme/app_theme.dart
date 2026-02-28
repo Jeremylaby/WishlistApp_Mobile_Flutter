@@ -29,7 +29,7 @@ const pinkNeutrals = AppColorScale(
 class AppTheme {
   static const _radii = AppRadii(sm: 4, md: 8, lg: 12, xl: 16);
   static const _borders = AppBorders(thin: 1, normal: 2, thick: 4);
-  static const _spacing = AppSpacing(sm: 4, md: 8, lg: 16, xl: 32);
+  static const _spacing = AppSpacing(sm: 6, md: 12, lg: 24, xl: 48);
   static const _breakpoints = AppBreakpoints(
     xs: 480,
     sm: 576,
@@ -232,7 +232,7 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(t.radii.md),
           ),
-          side: BorderSide(color: scheme.primary, width: t.borders.thick),
+          side: BorderSide(color: scheme.primary, width: t.borders.normal),
           textStyle: base.textTheme.bodyMedium?.copyWith(
             fontWeight: FontWeight.w600,
           ),
